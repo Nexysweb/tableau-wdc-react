@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/tableau-wdc-react/static/js/main.4ff21bca.chunk.js",
+    "main.js.map": "/tableau-wdc-react/static/js/main.4ff21bca.chunk.js.map",
+    "runtime-main.js": "/tableau-wdc-react/static/js/runtime-main.5f6472e7.js",
+    "runtime-main.js.map": "/tableau-wdc-react/static/js/runtime-main.5f6472e7.js.map",
+    "static/js/2.3c763a37.chunk.js": "/tableau-wdc-react/static/js/2.3c763a37.chunk.js",
+    "static/js/2.3c763a37.chunk.js.map": "/tableau-wdc-react/static/js/2.3c763a37.chunk.js.map",
+    "index.html": "/tableau-wdc-react/index.html",
+    "precache-manifest.5a28ac7b24d953dd348aa4c4b687a217.js": "/tableau-wdc-react/precache-manifest.5a28ac7b24d953dd348aa4c4b687a217.js",
+    "service-worker.js": "/tableau-wdc-react/service-worker.js",
+    "static/js/2.3c763a37.chunk.js.LICENSE.txt": "/tableau-wdc-react/static/js/2.3c763a37.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f6472e7.js",
+    "static/js/2.3c763a37.chunk.js",
+    "static/js/main.4ff21bca.chunk.js"
+  ]
+}
