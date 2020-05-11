@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <p>Make sure this page is run from either Tableau or the simmulator</p>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

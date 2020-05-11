@@ -1,6 +1,18 @@
 {
   "name": "@nexys/tableau-wdc-react",
   "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Nexysweb/tableau-wdc-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nexysweb/tableau-wdc-react/issues"
+  },
+  "keywords": [
+    "tableau",
+    "wdc",
+    "connector","typescript"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",

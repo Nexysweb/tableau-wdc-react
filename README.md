@@ -7,7 +7,14 @@ Ouputs HTML page and encapsulates the frontend logic
 
 ## Examples
 
-checlout `example.ts`
+checkout `example.ts`
+
+## Run and test
+
+### Simulator
+https://tableau.github.io/webdataconnector/Simulator/ and add the url https://nexysweb.github.io/tableau-wdc-react/ in `connector url`
+
+![Simulator screenshot](./simulator_screenshot.png)
 
 ### Notes
 
