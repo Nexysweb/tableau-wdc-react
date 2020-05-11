@@ -2,8 +2,6 @@
 import * as T from './type';
 //import tableau from './tableau.d';
 
-tableau.makeConnector()
-
 // Read a page's GET URL variables and return them as an associative array.
 export const getParameterByName = (name:string, url?:string):string |null => {
   if (!url) url = window.location.href;
@@ -45,8 +43,6 @@ export const mapArrayOntoTableauStruct = ([_, content]:T.ServiceResponse, colLab
     tableData.push(c as unknown as T.Value[]); // casting here otherwise does not work with TS definitions
     return true;
   });
-
-  console.log(tableData)
 
   return tableData;
 }
