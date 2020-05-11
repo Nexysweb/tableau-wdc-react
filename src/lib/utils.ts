@@ -26,7 +26,7 @@ export const strSanitize = (s:string, i?:number | string):string => {
 // map the output of the array strcuture onto a tableau compatible structure
 // param resp: response of the ajax call (which is an array of arrays)
 // pararm colLabel: the headers pre defined (note that this is also the first row of the rerponse)
-export const mapArrayOntoTableauStruct = ([_, content]:T.ServiceResponse, colLabel:string[]):T.Value[][] => {
+export const mapArrayOntoTableauStruct = ([_, content]:T.ServiceResponse, colLabel:T.ColumnDef[]):T.Value[][] => {
   // init output table
   const tableData:T.Value[][] = [];
 
@@ -34,9 +34,9 @@ export const mapArrayOntoTableauStruct = ([_, content]:T.ServiceResponse, colLab
   content.map(row => {
     const c:{[k:string]:T.Value} = {};
 
-    colLabel.map((headerKey:string, j:number) => {
+    colLabel.map((col:T.ColumnDef, j:number) => {
       const v:T.Value = row[j];
-      c[strSanitize(headerKey, j)] = v;
+      c[strSanitize(col.name, j)] = v;
       return true;
     })
 
@@ -47,11 +47,11 @@ export const mapArrayOntoTableauStruct = ([_, content]:T.ServiceResponse, colLab
   return tableData;
 }
 
-export const tableauColumnsFromArrayHeaders = (colLabel:string[]):T.SchemaColumn[] => colLabel.map((n:string, i:number) => {
+export const tableauColumnsFromArrayHeaders = (colLabel:T.ColumnDef[]):T.SchemaColumn[] => colLabel.map((c:T.ColumnDef, i:number) => {
   return {
-    id: strSanitize(n, i),
-    alias: n,
-    dataType: tableau.dataTypeEnum.string
+    id: strSanitize(c.name, i),
+    alias: c.name,
+    dataType: c.type || tableau.dataTypeEnum.string
   }
 });
 

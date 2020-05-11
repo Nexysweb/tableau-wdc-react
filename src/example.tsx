@@ -3,7 +3,15 @@ import React from 'react';
 import { T, Init } from './lib';
 
 // start parameters definition
-const columns:string[] = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+const columns:T.ColumnDef[] = [
+  {name: 'one', type: tableau.dataTypeEnum.float},
+  {name: 'two'},
+  {name: 'three'},
+  {name: 'four'},
+  {name: 'five'},
+  {name: 'six'},
+  {name: 'seven'}
+];
 
 const prefix = '/tableau-wdc-react'; // note this is required for GH pages
 const url = prefix + '/data.json'

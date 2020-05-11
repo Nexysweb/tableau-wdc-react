@@ -3,8 +3,13 @@ export interface Report {
   alias: string,
   url: string,
   method: string,
-  columns: string[]
+  columns: ColumnDef[]
 };
+
+export interface ColumnDef {
+  name: string,
+  type?: tableau.tDataType
+}
 
 export interface Config {
   name: string,
