@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "15e5b89fa4b73020d438e1286128a624",
+    "revision": "bf90f745b973798a4fdb8dfa8f9d0b21",
     "url": "/tableau-wdc-react/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tableau-wdc-react/static/js/2.3c763a37.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ac5d695db28a36394f6",
-    "url": "/tableau-wdc-react/static/js/main.4ff21bca.chunk.js"
+    "revision": "87162d48f0e5c2edc599",
+    "url": "/tableau-wdc-react/static/js/main.cfba4666.chunk.js"
   },
   {
     "revision": "bdcecca4ad8f4f67c365",
