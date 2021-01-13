@@ -31,7 +31,7 @@
   "scripts": {
     "buildpackage": "tsc -p tsconfig.build.json",
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=/tableau-wdc-react react-scripts build;rm -rf docs;mv build docs;cp docs/index.html docs/404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
