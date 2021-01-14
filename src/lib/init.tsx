@@ -32,8 +32,12 @@ const init = (props: { config: T.Config }): JSX.Element => {
         };
 
         fetch(r.url, options).then((resp: Response) => {
-          resp.json().then((jResponse: T.ServiceResponse) => {
-            const tableData = U.mapArrayOntoTableauStruct(jResponse, r.columns);
+          resp.json().then((jResponse: any) => {
+            const tabular: T.ServiceResponse = r.mapping
+              ? r.mapping(jResponse)
+              : (jResponse as T.ServiceResponse);
+            console.log(tabular);
+            const tableData = U.mapArrayOntoTableauStruct(tabular, r.columns);
             table.appendRows(tableData);
             doneCallback();
           });
