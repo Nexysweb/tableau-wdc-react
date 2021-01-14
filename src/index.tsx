@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./def";
+import App from "./example";
 //import App from './lib/tssaconnector'
 import * as serviceWorker from "./serviceWorker";
 
