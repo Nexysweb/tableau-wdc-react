@@ -7,7 +7,7 @@ Ouputs HTML page and encapsulates the frontend logic
 
 ## Examples
 
-checkout `example.ts`
+checkout `example.ts` and https://github.com/Nexysweb/tableau-wdc-react-boilerplate for a projet ready 
 
 ## Run and test
 
