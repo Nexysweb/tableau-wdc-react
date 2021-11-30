@@ -2,8 +2,11 @@ import React from "react";
 import * as T from "./type";
 import * as U from "./utils";
 
-const gh = "https://github.com/Nexysweb/tableau-wdc-react/commit/";
+const ghUrl = process.env.REACT_APP_GH_URL || "https://github.com/Nexysweb/tableau-wdc-react";
+
 const sha = process.env.REACT_APP_GIT_SHA || "git_sha_undefined";
+
+const ghUrlSha = ghUrl + "/commit/" + sha;
 const version = process.env.REACT_APP_VERSION || "git_version_undefined"
 
 const init = (props: { config: T.Config }): JSX.Element => {
@@ -72,7 +75,7 @@ const init = (props: { config: T.Config }): JSX.Element => {
       </button>
       <p>
         <small>
-          <a href={gh + sha}>{version}</a>
+          <a href={ghUrlSha}>{version}</a>
         </small>
       </p>
     </>
