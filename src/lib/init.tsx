@@ -1,15 +1,9 @@
 import React from "react";
 import * as T from "./type";
 import * as U from "./utils";
+import * as Config from './config';
 
-const ghUrl = process.env.REACT_APP_GH_URL || "https://github.com/Nexysweb/tableau-wdc-react";
-
-const sha = process.env.REACT_APP_GIT_SHA || "git_sha_undefined";
-
-const ghUrlSha = ghUrl + "/commit/" + sha;
-const version = process.env.REACT_APP_VERSION || "git_version_undefined"
-
-const init = (props: { config: T.Config }): JSX.Element => {
+const Init = (props: { config: T.Config }): JSX.Element => {
   const { config } = props;
   const { reports } = config;
   // Create the connector object
@@ -75,11 +69,11 @@ const init = (props: { config: T.Config }): JSX.Element => {
       </button>
       <p>
         <small>
-          <a href={ghUrlSha}>{version}</a>
+          <a href={Config.github.version}>{Config.version}</a>
         </small>
       </p>
     </>
   );
 };
 
-export default init;
+export default Init;
