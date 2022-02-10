@@ -1,9 +1,11 @@
 # https://medium.com/@cmichel/how-to-deploy-a-create-react-app-with-github-actions-5e01f7a7b6b
 name: Deployment
+
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,7 +25,7 @@ jobs:
       - name: Install Packages
         run: npm install
       - name: Build page
-        run: REACT_APP_GIT_SHA=$GITHUB_SHA PUBLIC_URL=/tableau-wdc-react yarn build
+        run: REACT_APP_GIT_SHA=$GITHUB_SHA REACT_APP_VERSION=${GITHUB_REF##*/} PUBLIC_URL=/tableau-wdc-react yarn build
       - name: add 404
         run: cp build/index.html build/404.html
       - name: Deploy to gh-pages
