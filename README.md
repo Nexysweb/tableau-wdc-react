@@ -2,6 +2,8 @@
 
 [![npm version](https://badge.fury.io/js/%40nexys%2Ftableau-wdc-react.svg)](https://www.npmjs.com/package/@nexys/tableau-wdc-react)
 [![TavisCI](https://travis-ci.com/Nexysweb/tableau-wdc-react.svg?branch=master)](https://travis-ci.com/github/Nexysweb/tableau-wdc-react)
+[![Deployment](https://github.com/Nexysweb/tableau-wdc-react/actions/workflows/deploy.yml/badge.svg)](https://github.com/Nexysweb/tableau-wdc-react/actions/workflows/deploy.yml)
+[![Publish](https://github.com/Nexysweb/tableau-wdc-react/actions/workflows/publish.yml/badge.svg)](https://github.com/Nexysweb/tableau-wdc-react/actions/workflows/publish.yml)
 
 Ouputs HTML page and encapsulates the frontend logic
 
